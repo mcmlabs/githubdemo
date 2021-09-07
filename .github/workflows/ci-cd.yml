@@ -41,7 +41,7 @@ jobs:
     - name: Run Azure webapp deploy action using publish profile credentials
       uses: azure/webapps-deploy@v2
       with:
-        app-name: bigpicture
+        app-name: githubdemo
         slot-name: Production
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
         package: TailwindTraders.Website/Source/Tailwind.Traders.Web/publish
